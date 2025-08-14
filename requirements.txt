@@ -1,0 +1,9 @@
+openai>=1.42.0
+python-dotenv
+ddgs
+requests
+beautifulsoup4
+pyyaml
+streamlit
+gradio
+pytest
