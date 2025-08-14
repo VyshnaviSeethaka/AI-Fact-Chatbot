@@ -1,0 +1,22 @@
+classify_claim: |
+  Classify the following text as one of: FACTUAL, OPINION, or UNSURE.
+  Return only the single word label.
+  Text: "{claim}"
+
+extract_assumptions: |
+  Extract 1–4 short factual checks (one per line) needed to verify the claim.
+  Keep each line brief and searchable (<= 10 words).
+  Claim: "{claim}"
+
+generate_report: |
+  Using the claim and evidence excerpts below, decide if the claim is TRUE, FALSE, or PARTIALLY TRUE.
+  Then provide 2–4 bullet points explaining why.
+  Claim: "{claim}"
+
+  Evidence excerpts (may be partial, noisy web text):
+  {evidence}
+
+  Output format:
+  Verdict: <TRUE|FALSE|PARTIALLY TRUE>
+  - <reason 1>
+  - <reason 2>
