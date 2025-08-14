@@ -1,4 +1,3 @@
-# src/ui/streamlit_app.py
 
 import sys
 import os
@@ -51,3 +50,4 @@ if st.button("Check Fact"):
                 st.error(f"❌ Error: {e}")
 
 st.caption("Powered by LLM + Web Search + Credibility Scoring")
+
